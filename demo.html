@@ -5,7 +5,46 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>jQuery Sliding Column Tables Demo</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/sliding-column-tables.css" />
 </head>
 <body>
+	<div class="fixed_columns_wrapper">
+		<table class="fixed_columns_table">
+			<thead>
+				<tr>
+					<th>Column 1</th>
+					<th>Column 2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Lorem ipsum dolor sit amet</td>
+					<td>consectetur</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="sliding_columns_wrapper">
+		<div class="sliding_columns_inner_wrapper">
+			<table class="sliding_columns_table">
+				<thead>
+					<tr>
+						<th>Column 3</th>
+						<th>Very Wide Column Is A Very Wide Column Is A Very Wide Column</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Morbi sit amet tellus tortor, vitae ultricies ligula.</td>
+						<td>Nam aliquam</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script type="text/javascript">
+		// Make both tables the same height
+		$(".sliding_columns_wrapper").height($(".fixed_columns_wrapper").height());
+	</script>
 </body>
 </html>

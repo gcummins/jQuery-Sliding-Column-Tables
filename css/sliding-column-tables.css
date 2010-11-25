@@ -1,0 +1,14 @@
+.fixed_columns_wrapper {
+	float: left;
+	background-color: blue;
+}
+.fixed_columns_table th, .fixed_columns_table td, .sliding_columns_table th, .sliding_columns_table td {
+	white-space: nowrap;
+}
+.sliding_columns_wrapper {
+	background-color: green;
+}
+.sliding_columns_wrapper {
+	overflow: hidden;
+}
+}
